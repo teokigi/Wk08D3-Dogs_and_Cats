@@ -11,6 +11,11 @@ const createRouter = function(data){
         res.json(data[req.params.id]);
     });
 
+    router.post('/', function(req,res){
+        data.push(req.body);
+        res.json(data);
+    });
+    
     return router;
 };
 
