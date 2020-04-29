@@ -15,7 +15,11 @@ const createRouter = function(data){
         data.push(req.body);
         res.json(data);
     });
-    
+
+    router.put('/:id', function(req,res){
+        data[req.params.id] = req.body;
+        res.json(data);
+    })
     return router;
 };
 
