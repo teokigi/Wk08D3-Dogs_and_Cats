@@ -5,7 +5,11 @@ const createRouter = function(data){
 
     router.get('/',function(req,res){
         res.json(data)
-    })
+    });
+
+    router.get('/:id', function(req,res) {
+        res.json(data[req.params.id]);
+    });
 
     return router;
 };
