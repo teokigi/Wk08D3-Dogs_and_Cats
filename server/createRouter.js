@@ -20,6 +20,12 @@ const createRouter = function(data){
         data[req.params.id] = req.body;
         res.json(data);
     })
+
+    router.delete('/:id', function(req,res){
+        data.splice(req.params.id,1);
+        res.json(data);
+    })
+    
     return router;
 };
 
