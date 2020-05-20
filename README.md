@@ -1,4 +1,4 @@
-# Wk08D3-Dogs_and_Cats
+# Dogs and Cats
 
 ## Project setup
 ```
